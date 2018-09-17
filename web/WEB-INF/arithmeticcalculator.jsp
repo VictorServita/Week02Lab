@@ -1,7 +1,7 @@
 <%-- 
     Document   : arithmeticcalculator
     Created on : Sep 13, 2018, 12:55:54 PM
-    Author     : 754632
+    Author     : Victor Servita
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -14,19 +14,20 @@
     <body>
         <h1>Arithmetic Calculator</h1>
         
-        <form><form method="post" action="calculator">
-            First: <input type="text" name="first" ><br>
-            Second: <input type="text" name="second" ><br>
+        <form method="post" action="arithmetic">
+            First: <input type="text" name="first" value="${fnumber}" ><br>
+            Second: <input type="text" name="second" value="${snumber}"><br>
             
-            <input type="submit" name="add" value="+">
-            <input type="submit" name="substract" value="-">
-            <input type="submit" name="multiply" value="*">
-            <input type="submit" name="percentage" value="%">
+            <input type="submit" name="button" value="add">
+            <input type="submit" name="button" value="substract">
+            <input type="submit" name="button" value="multiply">
+            <input type="submit" name="button" value="modulus">
             
         </form>
         <div>
-            result: ${message}
+          Result: ${message}
         </div>
+        <br>
         <a href="age">Age Calculator</a>
     </body>
 </html>
